@@ -20,7 +20,7 @@ body{
 }
 
 .h_100 {
-    height: 95%;
+    height: 98%;
 }
 .w_100 {
     width: 100%;
@@ -70,6 +70,7 @@ main {
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
+    background-position-y: bottom;
 }
 
 
@@ -120,6 +121,10 @@ footer > ul > li {
         margin: 5px;
     }
 
+    main {
+        background-size: 28%;
+    }
+
 
     
     
@@ -144,6 +149,9 @@ footer > ul > li {
         justify-content: space-between;
     }
     
+    main {
+        background-size: 70%;
+    }
     
 }
 /* /RESPONSIVE */
