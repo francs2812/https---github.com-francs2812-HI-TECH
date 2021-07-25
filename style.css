@@ -58,6 +58,10 @@ nav > ul > li {
     list-style: none;
 }
 
+.nav-link:focus, .nav-link:hover {
+    color: black;
+}
+
 /* /HEADER */
 
 
@@ -92,6 +96,10 @@ footer > ul > li {
     text-decoration: none;
     color: var(--green-hitech);
     font-weight: 800;
+}
+
+a:hover {
+    color: black;
 }
 
 /* /FOOTER */
