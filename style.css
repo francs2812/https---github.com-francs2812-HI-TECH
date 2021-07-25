@@ -19,6 +19,13 @@ body{
     float: left;
 }
 
+.h_100 {
+    height: 95%;
+}
+.w_100 {
+    width: 100%;
+}
+
 /* HEADER */
 
 header {
@@ -26,9 +33,14 @@ header {
     width: 100%;
     padding: 0 25px;
     text-transform: uppercase;
-    color: #79c324;
+    color: var(--green-hitech);
     background-color: black;
 }
+
+.text_green {
+    color: var(--green-hitech);
+}
+
 .logo{
     height: 100%;
 }
@@ -51,22 +63,23 @@ nav > ul > li {
 
 /* MAIN */
 main {
+    height: 100vh;
     width: 100%;
+    background-image: url(img/hi-tech_black_logo.png);
+    background-size: contain;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-main > img {
-    height: 50vh;
-    transform: translate(-50%, -50%);
-    margin-top: 50vh;
-    margin-left: 50%;
-}
+
 /* /MAIN */
 
 
 /* FOOTER */
 
 footer {
-    border-top: 25px solid #79c324;
+    border-top: 25px solid var(--green-hitech);
 }
 footer > ul {
     float: left;
@@ -78,7 +91,7 @@ footer > ul {
 footer > ul > li > a,
 footer > ul > li {
     text-decoration: none;
-    color: #79c324;
+    color: var(--green-hitech);
     font-weight: 800;
 }
 
@@ -88,14 +101,37 @@ footer > ul > li {
 
 @media screen and (max-width: 768px) {
 
-    .display_lg {
-        display: none;
+    header {
+        width: 100%;
     }
 
 
+    footer {
+        z-index: 5;
+    }
+
+    .navbar-toggler {
+        border-color: var(--green-hitech);
+    }
+
+    .navbar-toggler-icon > i {
+        color: var(--green-hitech);
+        height: 100%;
+        margin: 5px;
+    }
+
+
+    
+    
+    
+    
 }
 
 @media screen and (min-width: 1024px) {
+    
+    .nav_bar {
+        justify-content: flex-end;
+    }
 
     header {
         display: flex;
@@ -103,7 +139,15 @@ footer > ul > li {
         align-items: center;
         position: fixed;
     }
-
-
+    .container_navbar {
+        height: 15vh;
+        justify-content: space-between;
+    }
+    
+    
 }
 /* /RESPONSIVE */
+
+:root {
+    --green-hitech: #79c324 ;
+}
