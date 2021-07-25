@@ -25,10 +25,6 @@ header {
     height: 20vh;
     width: 100%;
     padding: 0 25px;
-    position: fixed;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     text-transform: uppercase;
     color: #79c324;
     background-color: black;
@@ -87,3 +83,27 @@ footer > ul > li {
 }
 
 /* /FOOTER */
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 768px) {
+
+    .display_lg {
+        display: none;
+    }
+
+
+}
+
+@media screen and (min-width: 1200px) {
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+    }
+
+
+}
+/* /RESPONSIVE */
